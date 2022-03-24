@@ -1,8 +1,10 @@
 from flask import Flask,render_template,Response
+import os
 
 
 app=Flask(__name__)
-
+t = os.listdir("model/")
+print(t)
 
 
 @app.route('/')
